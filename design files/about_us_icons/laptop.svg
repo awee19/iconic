@@ -4,6 +4,9 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 375 375"
 	 xml:space="preserve">
 <g id="base_1_">
+	<g id="laptopShadow">
+		<polygon fill-rule="evenodd" fill="#9F9F9F" points="316.5,261.75 59.25,261.75 51,270 324,270 		"/>
+	</g>
 	<g id="laptopBase">
 		<path fill-rule="evenodd" fill="#202020" d="M56.25,254.25V258c0,2.071,1.679,3.75,3.75,3.75h255c2.071,0,3.75-1.679,3.75-3.75
 			v-3.75H56.25z"/>
