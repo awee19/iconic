@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.2" baseProfile="tiny" id="laptop_1_"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 375 375"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 273 156.75"
 	 xml:space="preserve">
 <g id="base_1_">
 	<g id="laptopShadow">
-		<polygon fill-rule="evenodd" fill="#9F9F9F" points="316.5,261.75 59.25,261.75 51,270 324,270 		"/>
+		<polygon fill-rule="evenodd" fill="#9F9F9F" points="265.5,148.5 8.25,148.5 0,156.75 273,156.75 		"/>
 	</g>
 	<g id="laptopBase">
-		<path fill-rule="evenodd" fill="#202020" d="M56.25,254.25V258c0,2.071,1.679,3.75,3.75,3.75h255c2.071,0,3.75-1.679,3.75-3.75
-			v-3.75H56.25z"/>
+		<path fill-rule="evenodd" fill="#202020" d="M5.25,141v3.75c0,2.071,1.679,3.75,3.75,3.75h255c2.071,0,3.75-1.679,3.75-3.75V141
+			H5.25z"/>
 	</g>
 	<g id="keyboardFrame">
-		<polygon fill-rule="evenodd" fill="#ECECEC" points="296.25,225.75 82.5,225.75 56.25,252 56.25,254.25 318.75,254.25 318.75,252 
-					"/>
+		<polygon fill-rule="evenodd" fill="#ECECEC" points="245.25,112.5 31.5,112.5 5.25,138.75 5.25,141 267.75,141 267.75,138.75 		
+			"/>
 	</g>
 	<g id="touchPad">
 		<g>
-			<polygon fill-rule="evenodd" fill="#B9B9B9" points="165.776,252.25 169.072,245 205.928,245 209.224,252.25 			"/>
+			<polygon fill-rule="evenodd" fill="#B9B9B9" points="114.776,139 118.072,131.75 154.928,131.75 158.224,139 			"/>
 		</g>
 		<g>
-			<path fill="#9F9F9F" d="M205.606,245.5l2.841,6.25h-41.894l2.841-6.25H205.606 M206.25,244.5h-37.5l-3.75,8.25h45L206.25,244.5
-				L206.25,244.5z"/>
+			<path fill="#9F9F9F" d="M154.606,132.25l2.841,6.25h-41.894l2.841-6.25H154.606 M155.25,131.25h-37.5L114,139.5h45L155.25,131.25
+				L155.25,131.25z"/>
 		</g>
 	</g>
 	<g id="touchPadShadow">
-		<polygon fill-rule="evenodd" fill="#868686" points="205.5,245.25 171,245.25 169.5,245.25 168.75,246.75 168.833,246.75 
-			166.5,252 168,252 170.333,246.75 206.25,246.75 		"/>
+		<polygon fill-rule="evenodd" fill="#868686" points="154.5,132 120,132 118.5,132 117.75,133.5 117.833,133.5 115.5,138.75 
+			117,138.75 119.333,133.5 155.25,133.5 		"/>
 	</g>
 	<g id="keyboard">
-		<polygon fill-rule="evenodd" fill="#202020" points="291.75,228 86.25,228 71.25,243.75 305.25,243.75 		"/>
+		<polygon fill-rule="evenodd" fill="#202020" points="240.75,114.75 35.25,114.75 20.25,130.5 254.25,130.5 		"/>
 	</g>
 	<g id="keyboardShadow">
-		<polygon fill="#070707" points="294,231 291,228 89.25,228 86.25,228 83.25,231 83.393,231 71.25,243.75 74.25,243.75 86.393,231 
-					"/>
+		<polygon fill="#070707" points="243,117.75 240,114.75 38.25,114.75 35.25,114.75 32.25,117.75 32.393,117.75 20.25,130.5 
+			23.25,130.5 35.393,117.75 		"/>
 	</g>
 </g>
 <g id="top_1_">
 	<g id="screenFrame">
-		<path fill-rule="evenodd" fill="#202020" d="M292.5,113.25H86.25c-2.071,0-3.75,1.679-3.75,3.75v108.75h213.75V117
-			C296.25,114.929,294.571,113.25,292.5,113.25z"/>
+		<path fill-rule="evenodd" fill="#202020" d="M241.5,0H35.25c-2.071,0-3.75,1.679-3.75,3.75V112.5h213.75V3.75
+			C245.25,1.679,243.571,0,241.5,0z"/>
 	</g>
 	<g id="screen">
-		<rect x="93.75" y="124.5" fill-rule="evenodd" fill="#52C8FF" width="191.25" height="90"/>
+		<rect x="42.75" y="11.25" fill-rule="evenodd" fill="#52C8FF" width="191.25" height="90"/>
 	</g>
 	<g id="screenShadow">
-		<polygon fill-rule="evenodd" fill="#1F95CC" points="93.75,124.5 93.75,214.5 96,214.5 96,126.75 285,126.75 285,124.5 		"/>
+		<polygon fill-rule="evenodd" fill="#1F95CC" points="42.75,11.25 42.75,101.25 45,101.25 45,13.5 234,13.5 234,11.25 		"/>
 	</g>
 </g>
 </svg>
