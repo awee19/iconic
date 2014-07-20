@@ -33,7 +33,7 @@ Usage of box shadows and rounded corners are also minimised to improve support f
 
         <a href="#" class="brandContainer"></a>
         <div class="menuButton dockRight"></div>
-        <div class="sidebarMenuContainer dockRight2">asdasd</div>
+        <div class="sidebarMenuContainer sidebarInitial">asdasd</div>
     </header>
 
     <div class="contentContainer">
@@ -54,16 +54,16 @@ Usage of box shadows and rounded corners are also minimised to improve support f
                 sidebarButton.classList.toggle("dockLeft");
                 sidebarButton.classList.toggle("dockRight");
 
-                sidebarMenu.classList.toggle("dockLeft2");
-                sidebarMenu.classList.toggle("dockRight2");
+                sidebarMenu.classList.toggle("sidebarInitial");
+                sidebarMenu.classList.toggle("sidebarExpanded");
             }
 
             else {
                 sidebarButton.classList.toggle("dockLeft");
                 sidebarButton.classList.toggle("dockRight");
 
-                sidebarMenu.classList.toggle("dockLeft2");
-                sidebarMenu.classList.toggle("dockRight2");
+                sidebarMenu.classList.toggle("sidebarInitial");
+                sidebarMenu.classList.toggle("sidebarExpanded");
             }
 
             sidebarExpanded = !sidebarExpanded;

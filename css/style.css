@@ -21,7 +21,9 @@ body {
 
 /* --- Header tag --- */
 header {
-  width: 100%; }
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
 
 /* --- Headers --- */
 h1, h2, h3, h4, h5, h6 {
@@ -206,10 +208,9 @@ li {
 .sidebarMenuContainer {
   display: inline-block;
   width: 17.39583%;
-  float: right;
-  background: #070707; }
+  float: right; }
 
-.dockLeft2 {
+.sidebarExpanded {
   position: absolute;
   right: 0;
   -webkit-transition: right 0.3s ease-out;
@@ -217,7 +218,7 @@ li {
   -o-transition: right 0.3s ease-out;
   transition: right 0.3s ease-out; }
 
-.dockRight2 {
+.sidebarInitial {
   position: absolute;
   right: -17.39583%;
   -webkit-transition: right 0.3s ease-out;

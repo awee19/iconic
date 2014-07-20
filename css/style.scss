@@ -92,7 +92,9 @@ body {
 
 /* --- Header tag --- */
 header {
+  position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 /* --- Headers --- */
@@ -178,7 +180,7 @@ li {
   z-index: 2;
 }
 
-// state of menuButton after expanded, docked to the left
+// Position of menuButton after expanded, docked to the left
 .dockLeft {
   position: relative;
   background: transparent url("../img/main_icons/cross.svg") no-repeat center;
@@ -186,7 +188,7 @@ li {
   @include transition(right, 0.3s, ease-out);
 }
 
-// initial state of menuButton, docked to the right
+// Initial position of menuButton, docked to the right
 .dockRight {
   position: relative;
   right: 0;
@@ -194,20 +196,22 @@ li {
 }
 
 // sideBarMenuContainer contains the actual sidebar menu items
+// TODO: complete this shit
 .sidebarMenuContainer {
   display: inline-block;
   width: 17.39583%;
   float: right;
-  background: $greyscaleLevel0;
 }
 
-.dockLeft2 {
+// Position of sidebarMenuContainer after expanding
+.sidebarExpanded {
   position: absolute;
   right: 0;
   @include transition(right, 0.3s, ease-out);
 }
 
-.dockRight2 {
+// Initial position of sidebarMenuContainer
+.sidebarInitial {
   position: absolute;
   right: -17.39583%;
   @include transition(right, 0.3s, ease-out);
