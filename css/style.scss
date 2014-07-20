@@ -1,0 +1,94 @@
+/* The Iconic Icon Foundry SCSS */
+
+/* --- SASS Constants --- */
+
+/* --- colours --- */
+// greyscale level: 0 >> very dark, 10 >> very light
+$greyscaleLevel0: #070707;
+$greyscaleLevel1: #202020;
+$greyscaleLevel2: #3a3a3a;
+$greyscaleLevel3: #535353;
+$greyscaleLevel4: #6d6d6d;
+$greyscaleLevel5: #868686;
+$greyscaleLevel6: #9f9f9f;
+$greyscaleLevel7: #b9b9b9;
+$greyscaleLevel8: #d2d2d2;
+$greyscaleLevel9: #ececec;
+$greyscaleLevel10: #ffffff;
+
+/* --- SASS mixins --- */
+
+/* --- animations --- */
+@mixin transition($attribute, $duration, $effect){
+  -webkit-transition: $attribute $duration $effect;
+  -moz-transition: $attribute $duration $effect;
+  -o-transition: $attribute $duration $effect;
+  transition: $attribute $duration $effect;
+}
+
+@mixin fadeIn() {
+  opacity: 1;
+
+  @include transition(opacity, 0.3s, ease-out);
+}
+
+@mixin fadeOut() {
+  opacity: 0.4;
+
+  @include transition(opacity, 0.5s, ease-out);
+}
+
+/* --- Base tag styles --- */
+
+/* --- HTML --- */
+html {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 100%;
+  margin: auto;
+}
+
+/* --- Body --- */
+body {
+  margin: auto;
+}
+
+/* --- Headers --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+/* --- Anchor link --- */
+a {
+  color: $greyscaleLevel0;
+
+  @include fadeIn();
+
+  &:hover {
+    @include fadeOut();
+  }
+}
