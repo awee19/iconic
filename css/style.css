@@ -9,13 +9,13 @@
 html {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 100%;
-  margin: auto;
-  height: 100%; }
+  margin: auto; }
 
 /* --- Body --- */
 body {
+  width: 100%;
+  min-width: 960px;
   margin: auto;
-  height: 100%;
   background-color: #ececec; }
 
 /* --- Header tag --- */
@@ -69,118 +69,124 @@ li {
 .col1 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 4.6875%;
   margin-right: 1.66667%; }
 
 .col2 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 11.04167%;
   margin-right: 1.66667%; }
 
 .col3 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 17.39583%;
   margin-right: 1.66667%; }
 
 .col4 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 23.75%;
   margin-right: 1.66667%; }
 
 .col5 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 30.10417%;
   margin-right: 1.66667%; }
 
 .col6 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 36.45833%;
   margin-right: 1.66667%; }
 
 .col7 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 42.8125%;
   margin-right: 1.66667%; }
 
 .col8 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 49.16667%;
   margin-right: 1.66667%; }
 
 .col9 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 55.52083%;
   margin-right: 1.66667%; }
 
 .col10 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 61.875%;
   margin-right: 1.66667%; }
 
 .col11 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 68.22917%;
   margin-right: 1.66667%; }
 
 .col12 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 74.58333%;
   margin-right: 1.66667%; }
 
 .col13 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 80.9375%;
   margin-right: 1.66667%; }
 
 .col14 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 87.29167%;
   margin-right: 1.66667%; }
 
 .col15 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 93.64583%;
   margin-right: 1.66667%; }
 
 .col16 {
   display: inline-block;
   float: left;
-  background-color: white;
   width: 100%; }
 
 .last {
   float: right;
   margin-right: 0; }
 
+/* --- Header content --- */
 /* --- Brand container --- */
 .brandContainer {
-  width: 23.75%; }
+  display: inline-block;
+  width: 23.75%;
+  padding-bottom: 10.99537%;
+  background: transparent no-repeat center url("../img/logo/iconic_logo_long_reworked.svg");
+  background-size: 100%;
+  margin-left: 38.125%; }
+
+/* --- Sidebar menu elements --- */
+.menuButton {
+  display: inline-block;
+  float: right;
+  width: 4.6875%;
+  padding-bottom: 4.6875%;
+  background: transparent url("../img/main_icons/cross.svg") no-repeat center; }
+
+/* --- Body elements -- */
+.contentContainer {
+  width: 65.20833%;
+  border: 1px #d2d2d2 solid;
+  margin-left: 12.70833%;
+  padding: 1rem 2.8125rem 1rem 2.8125rem;
+  background: white; }

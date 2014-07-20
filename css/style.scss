@@ -56,7 +56,6 @@ $greyscaleLevel10: #ffffff;
     .col#{$i} {
       display: inline-block;
       float: left;
-      background-color: $greyscaleLevel10;
 
       @include columnWidthCalculator($i);
 
@@ -67,6 +66,11 @@ $greyscaleLevel10: #ffffff;
   }
 }
 
+@mixin aspectRatioHeightGenerator($width, $widthParts, $heightParts) {
+  $height: ($width/$widthParts) * $heightParts;
+  padding-bottom: unquote($height + '%');
+}
+
 /* --- Base tag styles --- */
 
 /* --- HTML --- */
@@ -74,13 +78,13 @@ html {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 100%;
   margin: auto;
-  height: 100%;
 }
 
 /* --- Body --- */
 body {
+  width: 100%;
+  min-width: 960px;
   margin: auto;
-  height: 100%;
   background-color: $greyscaleLevel9;
 }
 
@@ -140,14 +144,46 @@ li {
 /* --- Columns --- */
 @include columnGenerator();
 
+// Prevent last column from overflowing to next line
 .last {
   float: right;
   margin-right: 0;
 }
 
+/* --- Header content --- */
+
 /* --- Brand container --- */
 // This container holds the brand logo.
 // Takes up four columns
 .brandContainer {
+  display: inline-block;
   @include columnWidthCalculator(4);
+  @include aspectRatioHeightGenerator(23.75, 54, 25);
+  background: transparent no-repeat center url("../img/logo/iconic_logo_long_reworked.svg");
+  background-size: 100%;
+  margin-left: (366/960) * 100%;
+}
+
+/* --- Sidebar menu elements --- */
+// menuButton expands and collapse the sidebar menu upon toggled
+.menuButton {
+  display: inline-block;
+  float: right;
+  width: 4.6875%;
+  @include aspectRatioHeightGenerator(4.6875, 1, 1);
+  background: transparent url("../img/main_icons/cross.svg") no-repeat center;
+}
+
+// menuContainer contains the actual sidebar menu items
+.menuContainer {
+
+}
+
+/* --- Body elements -- */
+.contentContainer {
+  width: (716-90)/960 *100%;
+  border: 1px $greyscaleLevel8 solid;
+  margin-left: (122/960) * 100%;
+  padding: 1rem 2.8125rem 1rem 2.8125rem;
+  background: $greyscaleLevel10;
 }
