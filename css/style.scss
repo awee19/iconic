@@ -18,7 +18,7 @@ $greyscaleLevel10: #ffffff;
 
 /* --- SASS mixins --- */
 
-/* --- Animations --- */
+/* --- Transitions --- */
 @mixin transition($attribute, $duration, $effect){
   -webkit-transition: $attribute $duration $effect;
   -moz-transition: $attribute $duration $effect;
@@ -37,6 +37,8 @@ $greyscaleLevel10: #ffffff;
 
   @include transition(opacity, 0.5s, ease-out);
 }
+
+/* --- CSS animations --- */
 
 /* --- Column generator --- */
 
@@ -171,11 +173,26 @@ li {
   float: right;
   width: 4.6875%;
   @include aspectRatioHeightGenerator(4.6875, 1, 1);
-  background: transparent url("../img/main_icons/cross.svg") no-repeat center;
+  background: transparent url("../img/main_icons/hamburger.svg") no-repeat center;
+  cursor: pointer;
+  z-index: 2;
 }
 
-// menuContainer contains the actual sidebar menu items
-.menuContainer {
+.dockLeft {
+  position: relative;
+  background: transparent url("../img/main_icons/cross.svg") no-repeat center;
+  right: 300px;
+  @include transition(right, 0.3s, ease-out);
+}
+
+.dockRight {
+  position: relative;
+  right: 0;
+  @include transition(right, 0.3s, ease-out);
+}
+
+// sideBarMenuContainer contains the actual sidebar menu items
+.sidebarMenuContainer {
 
 }
 

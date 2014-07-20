@@ -2,7 +2,8 @@
 /* --- SASS Constants --- */
 /* --- colours --- */
 /* --- SASS mixins --- */
-/* --- Animations --- */
+/* --- Transitions --- */
+/* --- CSS animations --- */
 /* --- Column generator --- */
 /* --- Base tag styles --- */
 /* --- HTML --- */
@@ -181,7 +182,26 @@ li {
   float: right;
   width: 4.6875%;
   padding-bottom: 4.6875%;
-  background: transparent url("../img/main_icons/cross.svg") no-repeat center; }
+  background: transparent url("../img/main_icons/hamburger.svg") no-repeat center;
+  cursor: pointer;
+  z-index: 2; }
+
+.dockLeft {
+  position: relative;
+  background: transparent url("../img/main_icons/cross.svg") no-repeat center;
+  right: 300px;
+  -webkit-transition: right 0.3s ease-out;
+  -moz-transition: right 0.3s ease-out;
+  -o-transition: right 0.3s ease-out;
+  transition: right 0.3s ease-out; }
+
+.dockRight {
+  position: relative;
+  right: 0;
+  -webkit-transition: right 0.3s ease-out;
+  -moz-transition: right 0.3s ease-out;
+  -o-transition: right 0.3s ease-out;
+  transition: right 0.3s ease-out; }
 
 /* --- Body elements -- */
 .contentContainer {
