@@ -33,30 +33,37 @@ Usage of box shadows and rounded corners are also minimised to improve support f
 
         <a href="#" class="brandContainer"></a>
         <div class="menuButton dockRight"></div>
+        <div class="sidebarMenuContainer dockRight2">asdasd</div>
     </header>
 
     <div class="contentContainer">
         sdfsdf
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         var sidebarButton = document.querySelector(".menuButton");
+        var sidebarMenu = document.querySelector(".sidebarMenuContainer");
         var sidebarExpanded = false;
 
-        // This function expands or collapse the sidebar menu when the menuButton is clicked.
-        // The sidebarMenuContainer will slide from the right into the window
+        // This function expands or collapses the sidebar menu when the menuButton is clicked.
         sidebarButton.addEventListener('click', function() {
             // sidebarButton.style.position = "relative";
 
             if (sidebarExpanded) {
                 sidebarButton.classList.toggle("dockLeft");
                 sidebarButton.classList.toggle("dockRight");
+
+                sidebarMenu.classList.toggle("dockLeft2");
+                sidebarMenu.classList.toggle("dockRight2");
             }
 
             else {
                 sidebarButton.classList.toggle("dockLeft");
                 sidebarButton.classList.toggle("dockRight");
+
+                sidebarMenu.classList.toggle("dockLeft2");
+                sidebarMenu.classList.toggle("dockRight2");
             }
 
             sidebarExpanded = !sidebarExpanded;

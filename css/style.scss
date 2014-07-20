@@ -178,13 +178,15 @@ li {
   z-index: 2;
 }
 
+// state of menuButton after expanded, docked to the left
 .dockLeft {
   position: relative;
   background: transparent url("../img/main_icons/cross.svg") no-repeat center;
-  right: 300px;
+  right: (3*45 + 2*16 + 1)/960 * 100%;
   @include transition(right, 0.3s, ease-out);
 }
 
+// initial state of menuButton, docked to the right
 .dockRight {
   position: relative;
   right: 0;
@@ -193,7 +195,22 @@ li {
 
 // sideBarMenuContainer contains the actual sidebar menu items
 .sidebarMenuContainer {
+  display: inline-block;
+  width: 17.39583%;
+  float: right;
+  background: $greyscaleLevel0;
+}
 
+.dockLeft2 {
+  position: absolute;
+  right: 0;
+  @include transition(right, 0.3s, ease-out);
+}
+
+.dockRight2 {
+  position: absolute;
+  right: -17.39583%;
+  @include transition(right, 0.3s, ease-out);
 }
 
 /* --- Body elements -- */

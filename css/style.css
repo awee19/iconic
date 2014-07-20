@@ -189,7 +189,7 @@ li {
 .dockLeft {
   position: relative;
   background: transparent url("../img/main_icons/cross.svg") no-repeat center;
-  right: 300px;
+  right: 17.5%;
   -webkit-transition: right 0.3s ease-out;
   -moz-transition: right 0.3s ease-out;
   -o-transition: right 0.3s ease-out;
@@ -198,6 +198,28 @@ li {
 .dockRight {
   position: relative;
   right: 0;
+  -webkit-transition: right 0.3s ease-out;
+  -moz-transition: right 0.3s ease-out;
+  -o-transition: right 0.3s ease-out;
+  transition: right 0.3s ease-out; }
+
+.sidebarMenuContainer {
+  display: inline-block;
+  width: 17.39583%;
+  float: right;
+  background: #070707; }
+
+.dockLeft2 {
+  position: absolute;
+  right: 0;
+  -webkit-transition: right 0.3s ease-out;
+  -moz-transition: right 0.3s ease-out;
+  -o-transition: right 0.3s ease-out;
+  transition: right 0.3s ease-out; }
+
+.dockRight2 {
+  position: absolute;
+  right: -17.39583%;
   -webkit-transition: right 0.3s ease-out;
   -moz-transition: right 0.3s ease-out;
   -o-transition: right 0.3s ease-out;
