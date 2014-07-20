@@ -29,11 +29,41 @@ Usage of box shadows and rounded corners are also minimised to improve support f
 </head>
 <body>
 
-    <header>
-
+    <header id="headerContent">
         <a href="#" class="brandContainer"></a>
         <div class="menuButton dockRight"></div>
-        <div class="sidebarMenuContainer sidebarInitial">asdasd</div>
+
+        <div class="sidebarMenuContainer sidebarInitial">
+            <div class="menuTabContainer">
+                <span id="menuTabHome" class="iconContainer activeTab" width="100%"></span>
+                <span class="menuTabHeader"><h3>Home</h3></span>
+            </div>
+
+            <div class="menuTabContainer">
+                <span id="menuTabAbout" class="iconContainer" width="100%"></span>
+                <span class="menuTabHeader"><h3>About</h3></span>
+            </div>
+
+            <div class="menuTabContainer">
+                <span id="menuTabContact" class="iconContainer" width="100%"></span>
+                <span class="menuTabHeader"><h3>Contact</h3></span>
+            </div>
+
+            <div class="menuTabContainer">
+                <span id="menuTabStyleGuide" class="iconContainer" width="100%"></span>
+                <span class="menuTabHeader"><h3>Style guide</h3></span>
+            </div>
+
+            <div class="menuTabContainer">
+                <span id="menuTabPortfolio" class="iconContainer" width="100%"></span>
+                <span class="menuTabHeader"><h3>Portfolio</h3></span>
+            </div>
+
+            <div class="menuTabContainer">
+                <span id="menuTabPhotography" class="iconContainer" width="100%"></span>
+                <span class="menuTabHeader"><h3>Photography</h3></span>
+            </div>
+        </div>
     </header>
 
     <div class="contentContainer">
@@ -44,6 +74,7 @@ Usage of box shadows and rounded corners are also minimised to improve support f
     <script>
         var sidebarButton = document.querySelector(".menuButton");
         var sidebarMenu = document.querySelector(".sidebarMenuContainer");
+        var header = document.getElementById("headerContent");
         var sidebarExpanded = false;
 
         // This function expands or collapses the sidebar menu when the menuButton is clicked.
@@ -56,6 +87,9 @@ Usage of box shadows and rounded corners are also minimised to improve support f
 
                 sidebarMenu.classList.toggle("sidebarInitial");
                 sidebarMenu.classList.toggle("sidebarExpanded");
+
+                header.classList.toggle("hideOverflow");
+                header.classList.toggle("showOverFlow");
             }
 
             else {
@@ -64,6 +98,9 @@ Usage of box shadows and rounded corners are also minimised to improve support f
 
                 sidebarMenu.classList.toggle("sidebarInitial");
                 sidebarMenu.classList.toggle("sidebarExpanded");
+
+                header.classList.toggle("hideOverflow");
+                header.classList.toggle("showOverFlow");
             }
 
             sidebarExpanded = !sidebarExpanded;
