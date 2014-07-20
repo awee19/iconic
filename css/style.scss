@@ -18,7 +18,7 @@ $greyscaleLevel10: #ffffff;
 
 /* --- SASS mixins --- */
 
-/* --- animations --- */
+/* --- Animations --- */
 @mixin transition($attribute, $duration, $effect){
   -webkit-transition: $attribute $duration $effect;
   -moz-transition: $attribute $duration $effect;
@@ -38,6 +38,35 @@ $greyscaleLevel10: #ffffff;
   @include transition(opacity, 0.5s, ease-out);
 }
 
+/* --- Column generator --- */
+
+@mixin columnWidthCalculator($columnSize) {
+  $gutterSize: 16;
+  $columnWidth: 45;
+  width: (($columnSize)*($columnWidth) + (($columnSize)-1)*$gutterSize)/960 * 100%;
+}
+
+// 16 columns.
+// Column size: 4.6875% (45/960);
+// Gutter size: 1em (16px);
+@mixin columnGenerator() {
+  $columns: 16;
+
+  @for $i from 1 through $columns {
+    .col#{$i} {
+      display: inline-block;
+      float: left;
+      background-color: $greyscaleLevel10;
+
+      @include columnWidthCalculator($i);
+
+      @if $i < 16 {
+        margin-right: (16/960) * 100%;
+      }
+    }
+  }
+}
+
 /* --- Base tag styles --- */
 
 /* --- HTML --- */
@@ -45,11 +74,19 @@ html {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 100%;
   margin: auto;
+  height: 100%;
 }
 
 /* --- Body --- */
 body {
   margin: auto;
+  height: 100%;
+  background-color: $greyscaleLevel9;
+}
+
+/* --- Header tag --- */
+header {
+  width: 100%;
 }
 
 /* --- Headers --- */
@@ -91,4 +128,26 @@ a {
   &:hover {
     @include fadeOut();
   }
+}
+
+/* --- list --- */
+li {
+  list-style-type: none;
+}
+
+/* --- Custom styles --- */
+
+/* --- Columns --- */
+@include columnGenerator();
+
+.last {
+  float: right;
+  margin-right: 0;
+}
+
+/* --- Brand container --- */
+// This container holds the brand logo.
+// Takes up four columns
+.brandContainer {
+  @include columnWidthCalculator(4);
 }
