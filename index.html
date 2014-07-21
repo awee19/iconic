@@ -29,7 +29,7 @@ Usage of box shadows and rounded corners are also minimised to improve support f
 </head>
 <body>
 
-    <header id="headerContent">
+    <header class="headerContent">
         <a href="#" class="brandContainer"></a>
         <div class="menuButton dockRight"></div>
 
@@ -74,36 +74,18 @@ Usage of box shadows and rounded corners are also minimised to improve support f
     <script>
         var sidebarButton = document.querySelector(".menuButton");
         var sidebarMenu = document.querySelector(".sidebarMenuContainer");
-        var header = document.getElementById("headerContent");
-        var sidebarExpanded = false;
+        var header = document.querySelector(".headerContent");
 
         // This function expands or collapses the sidebar menu when the menuButton is clicked.
         sidebarButton.addEventListener('click', function() {
-            // sidebarButton.style.position = "relative";
+            sidebarButton.classList.toggle("dockLeft");
+            sidebarButton.classList.toggle("dockRight");
 
-            if (sidebarExpanded) {
-                sidebarButton.classList.toggle("dockLeft");
-                sidebarButton.classList.toggle("dockRight");
+            sidebarMenu.classList.toggle("sidebarInitial");
+            sidebarMenu.classList.toggle("sidebarExpanded");
 
-                sidebarMenu.classList.toggle("sidebarInitial");
-                sidebarMenu.classList.toggle("sidebarExpanded");
-
-                header.classList.toggle("hideOverflow");
-                header.classList.toggle("showOverFlow");
-            }
-
-            else {
-                sidebarButton.classList.toggle("dockLeft");
-                sidebarButton.classList.toggle("dockRight");
-
-                sidebarMenu.classList.toggle("sidebarInitial");
-                sidebarMenu.classList.toggle("sidebarExpanded");
-
-                header.classList.toggle("hideOverflow");
-                header.classList.toggle("showOverFlow");
-            }
-
-            sidebarExpanded = !sidebarExpanded;
+           // header.classList.toggle("hideOverflow");
+           //  header.classList.toggle("showOverflow");
         }, false);
     </script>
 </body>
