@@ -2,7 +2,7 @@
 
 /* --- SASS Constants --- */
 
-/* --- colours --- */
+/* --- Colours --- */
 // greyscale level: 0 >> very dark, 10 >> very light
 $greyscaleLevel0: #070707;
 $greyscaleLevel1: #202020;
@@ -16,7 +16,28 @@ $greyscaleLevel8: #d2d2d2;
 $greyscaleLevel9: #ececec;
 $greyscaleLevel10: #ffffff;
 
+/* --- Font size --- */
+// header level: 0 >> smallest, 5 >> biggest
+$headerLevel0: 0.75rem;
+$headerLevel1: 0.83rem;
+$headerLevel2: 1rem;
+$headerLevel3: 1.17rem;
+$headerLevel4: 1.5rem;
+$headerLevel5: 2rem;
+
 /* --- SASS mixins --- */
+
+/* --- Typography --- */
+
+// Header font family: Century Gothic
+@mixin headerFontFamily() {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+// Paragraph font family: Bodoni MT
+@mixin paragraphFontFamily() {
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
 
 /* --- Transitions --- */
 @mixin transition($attribute, $duration, $effect){
@@ -39,6 +60,7 @@ $greyscaleLevel10: #ffffff;
 }
 
 /* --- CSS animations --- */
+// None for now
 
 /* --- Column generator --- */
 
@@ -73,11 +95,25 @@ $greyscaleLevel10: #ffffff;
   padding-bottom: unquote($height + '%');
 }
 
+/* --- Sidebar menu related items --- */
+
+// Sidebar menu label generator
+@mixin menuContainerLabelGenerator($content) {
+  &:after {
+    @include headerFontFamily();
+
+    font-weight: 700;
+    font-size: $headerLevel2;
+    content: $content;
+  }
+}
+
 /* --- Base tag styles --- */
 
 /* --- HTML --- */
 html {
-  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  @include paragraphFontFamily();
+
   font-size: 100%;
   margin: auto;
 }
@@ -99,32 +135,33 @@ header {
 
 /* --- Headers --- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  @include headerFontFamily();
+
   font-weight: 700;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: $headerLevel5;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: $headerLevel4;
 }
 
 h3 {
-  font-size: 1.17rem;
+  font-size: $headerLevel3;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: $headerLevel2;
 }
 
 h5 {
-  font-size: 0.83rem;
+  font-size: $headerLevel1;
 }
 
 h6 {
-  font-size: 0.75rem;
+  font-size: $headerLevel0;
 }
 
 /* --- Anchor link --- */
@@ -256,43 +293,52 @@ li {
 
 .iconContainer {
   display: inline-block;
-  width: 45/167 * 100%;
-  @include aspectRatioHeightGenerator((45/167)*100, 1, 1);
+  width: (159/167) * 100% - (53/159) * 100%;
+  padding-top: 1.5rem;
+  padding-left: (53/159) * 100%;
+  @include aspectRatioHeightGenerator(((159/167) * 100), 159, 13);
   margin-left: 8/167 * 100%;
-  margin-right: 8/167 * 100%;
 }
 
 #menuTabHome {
-  background: transparent url("../img/main_icons/home.svg") no-repeat center;
+  background: transparent url("../img/main_icons/home.svg") no-repeat left;
+
+  @include menuContainerLabelGenerator("Home");
 }
 
 #menuTabAbout {
-  background: transparent url("../img/main_icons/question_mark.svg") no-repeat center;
+  background: transparent url("../img/main_icons/question_mark.svg") no-repeat left;
+  @include menuContainerLabelGenerator("About");
 }
 
 #menuTabContact {
-  background: transparent url("../img/main_icons/mail.svg") no-repeat center;
+  background: transparent url("../img/main_icons/mail.svg") no-repeat left;
+  @include menuContainerLabelGenerator("Contact");
 }
 
 #menuTabStyleGuide {
-  background: transparent url("../img/main_icons/book.svg") no-repeat center;
+  background: transparent url("../img/main_icons/book.svg") no-repeat left;
+  @include menuContainerLabelGenerator("Style Guide");
 }
 
 #menuTabPortfolio {
-  background: transparent url("../img/main_icons/folder.svg") no-repeat center;
+  background: transparent url("../img/main_icons/folder.svg") no-repeat left;
+  @include menuContainerLabelGenerator("Portfolio");
 }
 
 #menuTabPhotography {
-  background: transparent url("../img/main_icons/photo.svg") no-repeat center;
+  background: transparent url("../img/main_icons/photo.svg") no-repeat left;
+  @include menuContainerLabelGenerator("Photography");
 }
 
 .menuTabHeader {
   display: inline-block;
+  padding-left: 100%;
 }
 
 /* --- Body elements -- */
 .contentContainer {
-  width: (716-90)/960 *100%;
+  width: (716-90)/960 * 100%;
   border: 1px $greyscaleLevel8 solid;
   margin-left: (122/960) * 100%;
   padding: 1rem 2.8125rem 1rem 2.8125rem;
