@@ -28,6 +28,15 @@ header {
   width: 100%;
   height: auto; }
 
+/* --- Footer tag --- */
+footer {
+  position: relative;
+  width: 71.25%;
+  margin-left: 12.60417%;
+  padding: 1.66667%;
+  background: #b9b9b9;
+  border: #b9b9b9 solid 1px; }
+
 /* --- Headers --- */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -349,10 +358,10 @@ button {
 
 /* --- Body elements -- */
 .contentContainer {
-  width: 65.20833%;
+  width: 62.08333%;
   border: 1px #d2d2d2 solid;
-  margin-left: 12.70833%;
-  padding: 1rem 2.8125rem 1rem 2.8125rem;
+  margin-left: 12.60417%;
+  padding: 1.66667% 6.25% 1.66667% 6.25%;
   background: white; }
 
 .filterContainer {

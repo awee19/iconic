@@ -139,6 +139,16 @@ header {
   height: auto;
 }
 
+/* --- Footer tag --- */
+footer {
+  position: relative;
+  width: (684)/960 * 100%;
+  margin-left: (121)/960 * 100%;
+  padding: 16/960 * 100%;
+  background: $greyscaleLevel7;
+  border: $greyscaleLevel7 solid 1px;
+}
+
 /* --- Headers --- */
 h1, h2, h3, h4, h5, h6 {
   @include headerFontFamily();
@@ -359,10 +369,10 @@ button {
 
 /* --- Body elements -- */
 .contentContainer {
-  width: (716-90)/960 * 100%;
+  width: (716-120)/960 * 100%;
   border: 1px $greyscaleLevel8 solid;
-  margin-left: (122/960) * 100%;
-  padding: 1rem 2.8125rem 1rem 2.8125rem;
+  margin-left: (121/960) * 100%;
+  padding: ((16/960)*100%) ((60/960)*100%) ((16/960)*100%) ((60/960)*100%);
   background: $greyscaleLevel10;
 }
 
