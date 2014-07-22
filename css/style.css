@@ -298,11 +298,16 @@ button {
 
 .iconContainer {
   display: inline-block;
-  width: 61.87625%;
+  width: 57.08583%;
   padding-top: 1.5rem;
   padding-left: 33.33333%;
   padding-bottom: 7.78443%;
+  margin-left: 4.79042%;
   margin-left: 4.79042%; }
+
+.activeTab {
+  padding-bottom: 8.19685%;
+  border-bottom: 0.25rem solid white; }
 
 #menuTabHome {
   background: transparent url("../img/main_icons/home.svg") no-repeat left; }

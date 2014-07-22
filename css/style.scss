@@ -324,11 +324,17 @@ button {
 
 .iconContainer {
   display: inline-block;
-  width: (159/167) * 100% - (53/159) * 100%;
+  width: (151/167) * 100% - (53/159) * 100%;
   padding-top: 1.5rem;
   padding-left: (53/159) * 100%;
   @include aspectRatioHeightGenerator(((159/167) * 100), 159, 13);
   margin-left: 8/167 * 100%;
+  margin-left: 8/167 * 100%;
+}
+
+.activeTab {
+  @include aspectRatioHeightGenerator(((159/167) * 100), 151, 13);
+  border-bottom: 0.25rem solid $greyscaleLevel10;
 }
 
 #menuTabHome {
