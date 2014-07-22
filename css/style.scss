@@ -3,7 +3,7 @@
 /* --- SASS Constants --- */
 
 /* --- Colours --- */
-// greyscale level: 0 >> very dark, 10 >> very light
+// Greyscale level: 0 >> very dark, 10 >> very light
 $greyscaleLevel0: #070707;
 $greyscaleLevel1: #202020;
 $greyscaleLevel2: #3a3a3a;
@@ -16,8 +16,13 @@ $greyscaleLevel8: #d2d2d2;
 $greyscaleLevel9: #ececec;
 $greyscaleLevel10: #ffffff;
 
+// System status colours
+$statusSuccess: #58af5a;
+$statusWarning: #ea8236;
+$statusDanger: #e8404c;
+
 /* --- Font size --- */
-// header level: 0 >> smallest, 5 >> biggest
+// Header level: 0 >> smallest, 5 >> biggest
 $headerLevel0: 0.75rem;
 $headerLevel1: 0.83rem;
 $headerLevel2: 1rem;
@@ -70,9 +75,9 @@ $headerLevel5: 2rem;
   width: (($columnSize)*($columnWidth) + (($columnSize)-1)*$gutterSize)/960 * 100%;
 }
 
-// 16 columns.
-// Column size: 4.6875% (45/960);
-// Gutter size: 1em (16px);
+// 16 columns
+// Column size: 4.6875% (45/960)
+// Gutter size: 1em (16px)
 @mixin columnGenerator() {
   $columns: 16;
 
@@ -176,9 +181,24 @@ a {
   }
 }
 
-/* --- list --- */
+/* --- List --- */
 li {
   list-style-type: none;
+}
+
+/* --- Button --- */
+button {
+  @include columnWidthCalculator(2);
+  // @include aspectRatioHeightGenerator(11.04167, 53, 12);
+  @include headerFontFamily();
+
+  font-size: $headerLevel2;
+  color: $greyscaleLevel10;
+  background-color: $greyscaleLevel0;
+  box-shadow: none;
+  border: none;
+  
+  padding: 0.5rem 0 0.5rem 0;
 }
 
 /* --- Custom styles --- */

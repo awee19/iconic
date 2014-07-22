@@ -67,9 +67,20 @@ a {
     -o-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out; }
 
-/* --- list --- */
+/* --- List --- */
 li {
   list-style-type: none; }
+
+/* --- Button --- */
+button {
+  width: 11.04167%;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #070707;
+  box-shadow: none;
+  border: none;
+  padding: 0.5rem 0 0.5rem 0; }
 
 /* --- Custom styles --- */
 /* --- Columns --- */
