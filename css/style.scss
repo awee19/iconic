@@ -220,7 +220,7 @@ button {
 // Prevent last column from overflowing to next line
 .last {
   float: right;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 /* --- Header content --- */
@@ -249,7 +249,7 @@ button {
 
 /* --- Sidebar menu elements --- */
 
-/* --- menuButton styles --- */
+/* --- Menu button styles --- */
 // menuButton expands and collapse the sidebar menu upon toggled
 .menuButton {
   position: absolute;
@@ -275,7 +275,7 @@ button {
   @include transition(right, 0.3s, ease-out);
 }
 
-/* --- sidebarMenuContainer styles --- */
+/* --- Sidebar menu styles --- */
 // sideBarMenuContainer contains the actual sidebar menu items
 .sidebarMenuContainer {
   position: relative;
@@ -315,7 +315,7 @@ button {
   @include transition(all, 0.3s, ease-out);
 }
 
-/* --- Menu tabs styles --- */
+/* ---  Menu tab styles --- */
 .menuTabContainer {
   display: block;
   width: 100%;
@@ -378,4 +378,61 @@ button {
 
 .contentWrapper {
   overflow: hidden;
+}
+
+/* --- Work grid styles --- */
+// Each row contains three works
+.workGridRow {
+  margin-bottom: 2rem;
+}
+
+// workContainer to contain both the screenshot/sprite and also the title of the work
+.workContainer {
+  display: inline-block;
+  width: (167/594) * 100%;
+  margin-right: (42/594)*100%;
+
+  a {
+    color: $greyscaleLevel3 !important;
+  }
+}
+
+.workSpriteContainer {
+  width: (165-167)/167 * 100%;
+  @include aspectRatioHeightGenerator(100, 1, 1);
+  border: 1px solid $greyscaleLevel8;
+  margin-bottom: 0.5rem;
+
+  // Fix for Chrome hover pseudo class
+  @include fadeIn();
+
+  &:hover {
+    @include fadeOut();
+  }
+}
+
+.workTitle {
+
+  // Fix for Chrome hover pseudo class
+  @include fadeIn();
+
+  &:hover {
+    @include fadeOut();
+  }
+}
+
+/* --- Footer content --- */
+.footerSiteMap {
+  li {
+    display: inline-block;
+    @include headerFontFamily();
+    font-size: $headerLevel1;
+    font-weight: 700;
+    margin-right: 1rem;
+
+    a {
+      color: $greyscaleLevel3;
+      overflow: hidden;
+    }
+  }
 }
