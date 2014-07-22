@@ -83,8 +83,9 @@ $headerLevel5: 2rem;
 
   @for $i from 1 through $columns {
     .col#{$i} {
-      display: inline-block;
+      position: relative;
       float: left;
+      display: inline-block;
 
       @include columnWidthCalculator($i);
 
@@ -197,7 +198,7 @@ button {
   background-color: $greyscaleLevel0;
   box-shadow: none;
   border: none;
-  
+
   padding: 0.5rem 0 0.5rem 0;
 }
 
@@ -363,4 +364,8 @@ button {
   margin-left: (122/960) * 100%;
   padding: 1rem 2.8125rem 1rem 2.8125rem;
   background: $greyscaleLevel10;
+}
+
+.filterContainer {
+  overflow: hidden;
 }
