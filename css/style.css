@@ -414,12 +414,20 @@ button {
     transition: opacity 0.5s ease-out; }
 
 /* --- Footer content --- */
-.footerSiteMap li {
-  display: inline-block;
+.footerSiteMap {
+  margin-bottom: 1rem; }
+  .footerSiteMap li {
+    display: inline-block;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 0.83rem;
+    font-weight: 700;
+    margin-right: 1rem; }
+    .footerSiteMap li a {
+      color: #535353;
+      overflow: hidden; }
+
+.copyright {
+  color: #d2d2d2;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: 0.83rem;
-  font-weight: 700;
-  margin-right: 1rem; }
-  .footerSiteMap li a {
-    color: #535353;
-    overflow: hidden; }
+  font-size: 0.75rem;
+  font-style: italic; }

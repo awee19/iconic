@@ -431,6 +431,8 @@ button {
 
 /* --- Footer content --- */
 .footerSiteMap {
+  margin-bottom: 1rem;
+
   li {
     display: inline-block;
     @include headerFontFamily();
@@ -443,4 +445,11 @@ button {
       overflow: hidden;
     }
   }
+}
+
+.copyright {
+  color: $greyscaleLevel8;
+  @include headerFontFamily;
+  font-size: $headerLevel0;
+  font-style: italic;
 }
