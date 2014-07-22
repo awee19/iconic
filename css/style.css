@@ -364,6 +364,9 @@ button {
   padding: 1.66667% 6.25% 1.66667% 6.25%;
   background: white; }
 
+.contentTitle {
+  margin-bottom: 2rem; }
+
 .contentWrapper {
   overflow: hidden; }
 
@@ -377,6 +380,8 @@ button {
   margin-right: 7.07071%; }
   .workContainer a {
     color: #535353 !important; }
+    .workContainer a:hover {
+      opacity: 1; }
 
 .workSpriteContainer {
   width: -1.1976%;

@@ -376,6 +376,10 @@ button {
   background: $greyscaleLevel10;
 }
 
+.contentTitle {
+  margin-bottom: 2rem;
+}
+
 .contentWrapper {
   overflow: hidden;
 }
@@ -394,6 +398,10 @@ button {
 
   a {
     color: $greyscaleLevel3 !important;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
