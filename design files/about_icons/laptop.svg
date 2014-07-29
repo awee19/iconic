@@ -1,197 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny" id="laptop_1_"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 286.5 164.25"
-	 xml:space="preserve">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="laptop_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 286.5 164.25" style="enable-background:new 0 0 286.5 164.25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#202020;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#ECECEC;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#B9B9B9;}
+	.st4{fill:#9F9F9F;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#868686;}
+	.st6{fill:#070707;}
+	.st7{opacity:0.349;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#52C8FF;}
+	.st10{fill-rule:evenodd;clip-rule:evenodd;fill:#1F95CC;}
+</style>
 <g id="base_1_">
-	<g id="laptopShadow_xA0_Image_1_">
-		
-			<image width="375" height="25" id="laptopShadow_xA0_Image" xlink:href="data:image/png;base64,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" transform="matrix(0.75 0 0 0.75 5.25 145.5)">
-		</image>
+	<g id="laptopShadow">
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="144" y1="164.25" x2="144" y2="145.5">
+				<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</linearGradient>
+			<polygon class="st0" points="267.75,145.5 5.25,149.25 15.75,164.25 282.75,164.25 			"/>
+		</g>
 	</g>
 	<g id="laptopBase">
-		<path fill-rule="evenodd" fill="#202020" d="M5.25,144.75v3.75c0,2.071,1.679,3.75,3.75,3.75h255c2.071,0,3.75-1.679,3.75-3.75
-			v-3.75H5.25z"/>
+		<g>
+			<path class="st1" d="M5.25,144.75v3.75c0,2.071,1.679,3.75,3.75,3.75h255c2.071,0,3.75-1.679,3.75-3.75v-3.75H5.25z"/>
+		</g>
 	</g>
 	<g id="keyboardFrame">
-		<polygon fill-rule="evenodd" fill="#ECECEC" points="245.25,116.25 31.5,116.25 5.25,142.5 5.25,144.75 267.75,144.75 
-			267.75,142.5 		"/>
+		<g>
+			<polygon class="st2" points="245.25,116.25 31.5,116.25 5.25,142.5 5.25,144.75 267.75,144.75 267.75,142.5 			"/>
+		</g>
 	</g>
 	<g id="touchPad">
 		<g>
-			<polygon fill-rule="evenodd" fill="#B9B9B9" points="114.776,142.75 118.072,135.5 154.928,135.5 158.224,142.75 			"/>
+			<polygon class="st3" points="114.776,142.75 118.072,135.5 154.928,135.5 158.224,142.75 			"/>
 		</g>
 		<g>
-			<path fill="#9F9F9F" d="M154.606,136l2.841,6.25h-41.894l2.841-6.25H154.606 M155.25,135h-37.5l-3.75,8.25h45L155.25,135
-				L155.25,135z"/>
+			<path class="st4" d="M154.606,136l2.841,6.25h-41.894l2.841-6.25H154.606 M155.25,135h-37.5l-3.75,8.25h45L155.25,135L155.25,135
+				z"/>
 		</g>
 	</g>
 	<g id="touchPadShadow">
-		<polygon fill-rule="evenodd" fill="#868686" points="154.5,135.75 120,135.75 118.5,135.75 117.75,137.25 117.833,137.25 
-			115.5,142.5 117,142.5 119.333,137.25 155.25,137.25 		"/>
+		<g>
+			<polygon class="st5" points="154.5,135.75 120,135.75 118.5,135.75 117.75,137.25 117.833,137.25 115.5,142.5 117,142.5 
+				119.333,137.25 155.25,137.25 			"/>
+		</g>
 	</g>
 	<g id="keyboard">
-		<polygon fill-rule="evenodd" fill="#202020" points="240.75,118.5 35.25,118.5 20.25,134.25 254.25,134.25 		"/>
+		<g>
+			<polygon class="st1" points="240.75,118.5 35.25,118.5 20.25,134.25 254.25,134.25 			"/>
+		</g>
 	</g>
 	<g id="keyboardShadow">
-		<polygon fill="#070707" points="243,121.5 240,118.5 38.25,118.5 35.25,118.5 32.25,121.5 32.393,121.5 20.25,134.25 
-			23.25,134.25 35.393,121.5 		"/>
+		<g>
+			<polygon class="st6" points="243,121.5 240,118.5 38.25,118.5 35.25,118.5 32.25,121.5 32.393,121.5 20.25,134.25 23.25,134.25 
+				35.393,121.5 			"/>
+		</g>
 	</g>
-	<g id="screenGlow_xA0_Image_1_">
-		
-			<image width="330" height="24" id="screenGlow_xA0_Image" xlink:href="data:image/png;base64,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
-YACAZylm8ltOBQAAAABJRU5ErkJggg==" transform="matrix(0.75 0 0 0.75 13.5 116.25)">
-		</image>
+	<g id="screenGlow" class="st7">
+		<g>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="137.25" y1="134.25" x2="137.25" y2="116.25">
+				<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+				<stop  offset="1" style="stop-color:#52C8FF"/>
+			</linearGradient>
+			<polygon class="st8" points="245.25,116.25 31.5,116.25 13.5,134.25 261,134.25 			"/>
+		</g>
 	</g>
 </g>
 <g id="top_1_">
 	<g id="screenFrame">
-		<path fill-rule="evenodd" fill="#202020" d="M241.5,0H35.25c-2.071,0-3.75,1.679-3.75,3.75v112.5h213.75V3.75
-			C245.25,1.679,243.571,0,241.5,0z"/>
+		<g>
+			<path class="st1" d="M241.5,0H35.25c-2.071,0-3.75,1.679-3.75,3.75v112.5h213.75V3.75C245.25,1.679,243.571,0,241.5,0z"/>
+		</g>
 	</g>
 	<g id="screen">
-		<rect x="42.75" y="11.25" fill-rule="evenodd" fill="#52C8FF" width="191.25" height="93.75"/>
+		<g>
+			<rect x="42.75" y="11.25" class="st9" width="191.25" height="93.75"/>
+		</g>
 	</g>
 	<g id="screenShadow">
-		<polygon fill-rule="evenodd" fill="#1F95CC" points="42.75,11.25 42.75,105 45,105 45,13.5 234,13.5 234,11.25 		"/>
+		<g>
+			<polygon class="st10" points="42.75,11.25 42.75,105 45,105 45,13.5 234,13.5 234,11.25 			"/>
+		</g>
 	</g>
 </g>
 </svg>
