@@ -182,7 +182,7 @@ h6 {
 
 /* --- Anchor link --- */
 a {
-  color: $greyscaleLevel10;
+  color: $greyscaleLevel6;
   text-decoration: none;
 
   @include fadeIn();
@@ -266,13 +266,13 @@ button {
 .dockLeft {
   background: transparent url("../img/main_icons/cross.svg") no-repeat center;
   right: (3*45 + 2*16 + 1)/960 * 100%;
-  @include transition(right, 0.3s, ease-out);
+  @include transition(all, 0.3s, ease-out);
 }
 
 // Initial position of menuButton, docked to the right
 .dockRight {
   right: 0;
-  @include transition(right, 0.3s, ease-out);
+  @include transition(all, 0.3s, ease-out);
 }
 
 /* --- Sidebar menu styles --- */
@@ -289,28 +289,14 @@ button {
 
 // Position of sidebarMenuContainer after expanding
 .sidebarExpanded {
-  -webkit-transform: scaleX(1);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform: scaleX(1);
-  -moz-transform-origin: 100% 100%;
-  -ms-transform: scaleX(1);
-  -ms-transform-origin: 100% 100%;
-  transform: scaleX(1);
-  transform-origin: 100% 100%;
+  max-width: 999px;
 
   @include transition(all, 0.3s, ease-out);
 }
 
 // Initial position of sidebarMenuContainer
 .sidebarInitial {
-  -webkit-transform: scaleX(0);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform: scaleX(0);
-  -moz-transform-origin: 100% 100%;
-  -ms-transform: scaleX(0);
-  -ms-transform-origin: 100% 100%;
-  transform: scaleX(0);
-  transform-origin: 100% 100%;
+  max-width: 0;
 
   @include transition(all, 0.3s, ease-out);
 }
@@ -320,6 +306,10 @@ button {
   display: block;
   width: 100%;
   margin-bottom: 0.5rem;
+
+  a {
+    color: $greyscaleLevel10;
+  }
 }
 
 .iconContainer {
@@ -329,7 +319,6 @@ button {
   padding-left: (53/159) * 100%;
   @include aspectRatioHeightGenerator(((159/167) * 100), 159, 13);
   margin-left: 8/167 * 100%;
-  margin-left: 8/167 * 100%;
 }
 
 .activeTab {
@@ -337,6 +326,7 @@ button {
   border-bottom: 0.25rem solid $greyscaleLevel10;
 }
 
+// TODO: change active background to greyscaleLevel2 to reduce contrast and affordability of the link
 #menuTabHome {
   background: transparent url("../img/main_icons/home.svg") no-repeat left;
 
@@ -403,8 +393,6 @@ button {
   margin-right: (42/594)*100%;
 
   a {
-    color: $greyscaleLevel3 !important;
-
     &:hover {
       opacity: 1;
     }
@@ -413,6 +401,7 @@ button {
 
 .workSpriteContainer {
   width: (165-167)/167 * 100%;
+  background-size: 100%;
   @include aspectRatioHeightGenerator(100, 1, 1);
   border: 1px solid $greyscaleLevel8;
   margin-bottom: 0.5rem;
@@ -423,6 +412,30 @@ button {
   &:hover {
     @include fadeOut();
   }
+}
+
+#sprite8packsIconColoured {
+  background: transparent url("../img/work_sprites/sprite_8packs_coloured.svg") no-repeat center center;
+}
+
+#sprite8packsIconMono {
+  background: transparent url("../img/work_sprites/sprite_8packs_mono.svg") no-repeat center center;
+}
+
+#spriteTechNews {
+  background: transparent url("../img/work_sprites/sprite_tech_news.svg") no-repeat center center;
+}
+
+#spriteIconic {
+  background: transparent url("../img/work_sprites/sprite_iconic.svg") no-repeat center center;
+}
+
+#spriteCalorieCalc {
+  background: transparent url("../img/work_sprites/sprite_pixel_man.svg") no-repeat center center;
+}
+
+#sprite8packs {
+  background: transparent url("../img/work_sprites/sprite_8packs_logo.svg") no-repeat center center;
 }
 
 .workTitle {
@@ -447,8 +460,7 @@ button {
     margin-right: 1rem;
 
     a {
-      color: $greyscaleLevel3;
-      overflow: hidden;
+      color: $greyscaleLevel4;
     }
   }
 }
