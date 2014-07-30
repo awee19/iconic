@@ -496,6 +496,18 @@ button {
   }
 }
 
+/* --- Colour swatch style */
+#colourSwatchContainer {
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.colourSwatch {
+  display: inline-block;
+  width:5%;
+  @include aspectRatioHeightGenerator(5, 1, 1);
+}
+
 /* --- Footer content --- */
 .footerSiteMap {
   margin-bottom: 1rem;
