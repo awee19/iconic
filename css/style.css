@@ -11,7 +11,7 @@
 /* --- Base tag styles --- */
 /* --- HTML --- */
 html {
-  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 100%;
   margin: auto; }
 
@@ -61,12 +61,16 @@ h5 {
 h6 {
   font-size: 0.75rem; }
 
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem; }
+
 strong {
   font-weight: 700; }
 
 /* --- Anchor link --- */
 a {
-  color: #9f9f9f;
+  color: #6d6d6d;
   text-decoration: none;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-out;
@@ -376,6 +380,12 @@ button {
 
 .contentCopywriting {
   margin-bottom: 2rem; }
+
+.contentImage {
+  width: 97.3064%;
+  margin-bottom: 1rem;
+  padding: 2.3569%;
+  border: 1px #d2d2d2 dotted; }
 
 .contentWrapper {
   overflow: hidden; }

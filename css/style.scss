@@ -41,7 +41,7 @@ $headerLevel5: 2rem;
 
 // Paragraph font family: Bodoni MT
 @mixin paragraphFontFamily() {
-  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 /* --- Transitions --- */
@@ -192,13 +192,18 @@ h6 {
   font-size: $headerLevel0;
 }
 
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 strong {
   font-weight: 700;
 }
 
 /* --- Anchor link --- */
 a {
-  color: $greyscaleLevel6;
+  color: $greyscaleLevel4;
   text-decoration: none;
 
   @include fadeIn();
@@ -410,6 +415,13 @@ button {
 
 .contentCopywriting {
   margin-bottom: 2rem;
+}
+
+.contentImage {
+  width: (578/594) * 100%;
+  margin-bottom: 1rem;
+  padding: (14/594) * 100%;
+  border: 1px $greyscaleLevel8 dotted;
 }
 
 .contentWrapper {
