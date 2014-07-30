@@ -428,6 +428,30 @@ button {
   overflow: hidden;
 }
 
+/* --- Footer content --- */
+.footerSiteMap {
+  margin-bottom: 1rem;
+
+  li {
+    display: inline-block;
+    @include headerFontFamily();
+    font-size: $headerLevel1;
+    font-weight: 700;
+    margin-right: 1rem;
+
+    a {
+      color: $greyscaleLevel4;
+    }
+  }
+}
+
+.copyright {
+  color: $greyscaleLevel8;
+  @include headerFontFamily;
+  font-size: $headerLevel0;
+  font-style: italic;
+}
+
 /* --- Work grid styles --- */
 // Each row contains three works
 .workGridRow {
@@ -506,28 +530,4 @@ button {
   display: inline-block;
   width:5%;
   @include aspectRatioHeightGenerator(5, 1, 1);
-}
-
-/* --- Footer content --- */
-.footerSiteMap {
-  margin-bottom: 1rem;
-
-  li {
-    display: inline-block;
-    @include headerFontFamily();
-    font-size: $headerLevel1;
-    font-weight: 700;
-    margin-right: 1rem;
-
-    a {
-      color: $greyscaleLevel4;
-    }
-  }
-}
-
-.copyright {
-  color: $greyscaleLevel8;
-  @include headerFontFamily;
-  font-size: $headerLevel0;
-  font-style: italic;
 }
