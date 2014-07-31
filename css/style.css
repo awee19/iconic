@@ -381,10 +381,13 @@ button {
 .contentCopywriting {
   margin-bottom: 2rem; }
 
+.narrowImage {
+  text-align: center; }
+
 .contentImage {
-  width: 97.3064%;
+  max-width: 97.3064%;
   margin-bottom: 1rem;
-  padding: 2.3569%;
+  padding: 2.6936%;
   border: 1px #d2d2d2 dotted; }
 
 .contentWrapper {

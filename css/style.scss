@@ -417,10 +417,14 @@ button {
   margin-bottom: 2rem;
 }
 
+.narrowImage {
+  text-align: center;
+}
+
 .contentImage {
-  width: (578/594) * 100%;
+  max-width: (578/594) * 100%;
   margin-bottom: 1rem;
-  padding: (14/594) * 100%;
+  padding: (16/594) * 100%;
   border: 1px $greyscaleLevel8 dotted;
 }
 
