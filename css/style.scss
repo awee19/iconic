@@ -548,3 +548,20 @@ button {
     padding: $headerLevel1;
   }
 }
+
+.pageNavigationLink {
+  @include headerFontFamily();
+  font-size: $headerLevel1;
+  font-weight: 700;
+  &.prev {
+    float: right;
+  }
+}
+
+.pageNext {
+
+}
+
+.pagePrev {
+
+}

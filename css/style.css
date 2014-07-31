@@ -487,3 +487,10 @@ button {
     font-size: 0.83rem;
     border: 1px #535353 solid;
     padding: 0.83rem; }
+
+.pageNavigationLink {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 0.83rem;
+  font-weight: 700; }
+  .pageNavigationLink.prev {
+    float: right; }
