@@ -558,10 +558,17 @@ button {
   }
 }
 
-.pageNext {
+.pageNext, .pagePrev {
+  display: inline-block;
+  background-size: 100%;
+  width: $headerLevel1;
+  height: $headerLevel1;
+}
 
+.pageNext {
+  background: transparent url("../img/main_icons/arrow_left.svg") no-repeat center center;
 }
 
 .pagePrev {
-
+  background: transparent url("../img/main_icons/arrow_right.svg") no-repeat center center;
 }

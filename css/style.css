@@ -494,3 +494,15 @@ button {
   font-weight: 700; }
   .pageNavigationLink.prev {
     float: right; }
+
+.pageNext, .pagePrev {
+  display: inline-block;
+  background-size: 100%;
+  width: 0.83rem;
+  height: 0.83rem; }
+
+.pageNext {
+  background: transparent url("../img/main_icons/arrow_left.svg") no-repeat center center; }
+
+.pagePrev {
+  background: transparent url("../img/main_icons/arrow_right.svg") no-repeat center center; }
