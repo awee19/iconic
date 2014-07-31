@@ -390,11 +390,13 @@ button {
 .contentWrapper {
   overflow: hidden; }
 
+.horizontalList li, .horizontalList ol {
+  display: inline-block; }
+
 /* --- Footer content --- */
 .footerSiteMap {
   margin-bottom: 1rem; }
   .footerSiteMap li {
-    display: inline-block;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 0.83rem;
     font-weight: 700;
@@ -403,7 +405,7 @@ button {
       color: #6d6d6d; }
 
 .copyright {
-  color: #d2d2d2;
+  color: white;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 0.75rem;
   font-style: italic; }
@@ -477,3 +479,11 @@ button {
   display: inline-block;
   width: 5%;
   padding-bottom: 5%; }
+
+.skillList {
+  margin-bottom: 1rem; }
+  .skillList li, .skillList ol {
+    color: #535353;
+    font-size: 0.83rem;
+    border: 1px #535353 solid;
+    padding: 0.83rem; }

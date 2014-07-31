@@ -428,12 +428,18 @@ button {
   overflow: hidden;
 }
 
+.horizontalList {
+
+  li, ol{
+    display: inline-block;
+  }
+}
+
 /* --- Footer content --- */
 .footerSiteMap {
   margin-bottom: 1rem;
 
   li {
-    display: inline-block;
     @include headerFontFamily();
     font-size: $headerLevel1;
     font-weight: 700;
@@ -446,7 +452,7 @@ button {
 }
 
 .copyright {
-  color: $greyscaleLevel8;
+  color: $greyscaleLevel10;
   @include headerFontFamily;
   font-size: $headerLevel0;
   font-style: italic;
@@ -530,4 +536,15 @@ button {
   display: inline-block;
   width:5%;
   @include aspectRatioHeightGenerator(5, 1, 1);
+}
+
+.skillList {
+  margin-bottom: 1rem;
+
+  li, ol {
+    color: $greyscaleLevel3;
+    font-size: $headerLevel1;
+    border: 1px $greyscaleLevel3 solid;
+    padding: $headerLevel1;
+  }
 }
