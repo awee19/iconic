@@ -101,6 +101,11 @@ button {
   border: none;
   padding: 0.5rem 0 0.5rem 0; }
 
+/* --- Address --- */
+address {
+  font-size: 0.75rem;
+  font-style: italic; }
+
 /* --- Custom styles --- */
 /* --- Columns --- */
 .col1 {
@@ -348,14 +353,14 @@ button {
   #menuTabStyleGuide.activeTab {
     background: transparent url("../img/main_icons/book_active.svg") no-repeat left; }
 
-#menuTabPortfolio {
+#menuTabResume {
   background: transparent url("../img/main_icons/folder.svg") no-repeat left; }
-  #menuTabPortfolio:after {
+  #menuTabResume:after {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    content: "Portfolio"; }
-  #menuTabPortfolio.activeTab {
+    content: "Resume"; }
+  #menuTabResume.activeTab {
     background: transparent url("../img/main_icons/folder_active.svg") no-repeat left; }
 
 #menuTabPhotography {
@@ -373,6 +378,11 @@ button {
   padding-left: 100%; }
 
 /* --- Content elements -- */
+.contact {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem; }
+
 .contentContainer {
   width: 62.08333%;
   border: 1px #d2d2d2 solid;

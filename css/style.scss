@@ -237,6 +237,12 @@ button {
   padding: 0.5rem 0 0.5rem 0;
 }
 
+/* --- Address --- */
+address{
+  font-size: $headerLevel0;
+  font-style: italic;
+}
+
 /* --- Custom styles --- */
 
 /* --- Columns --- */
@@ -385,9 +391,9 @@ button {
   }
 }
 
-#menuTabPortfolio {
+#menuTabResume {
   background: transparent url("../img/main_icons/folder.svg") no-repeat left;
-  @include menuContainerLabelGenerator("Portfolio");
+  @include menuContainerLabelGenerator("Resume");
 
   &.activeTab {
     background: transparent url("../img/main_icons/folder_active.svg") no-repeat left;
@@ -409,6 +415,12 @@ button {
 }
 
 /* --- Content elements -- */
+.contact {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .contentContainer {
   width: (716-120)/960 * 100%;
   border: 1px $greyscaleLevel8 solid;
