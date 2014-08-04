@@ -19,6 +19,7 @@ html {
 body {
   width: 100%;
   min-width: 960px;
+  font-size: 1rem;
   margin: auto;
   background-color: #ececec; }
 
@@ -379,8 +380,9 @@ address {
 
 /* --- Content elements -- */
 .contact {
-  width: 100%;
-  text-align: center;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-left: 12.60417%;
   margin-bottom: 1rem; }
 
 .contentContainer {
