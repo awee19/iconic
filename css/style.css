@@ -246,7 +246,7 @@ address {
 .menuButton {
   position: absolute;
   display: inline-block;
-  float: right;
+  top: 0;
   width: 4.6875%;
   padding-bottom: 4.6875%;
   background: #070707 url("../img/main_icons/hamburger.svg") no-repeat center;

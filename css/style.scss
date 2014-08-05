@@ -281,12 +281,15 @@ address{
 
 /* --- Sidebar menu elements --- */
 
+.headerContent {
+}
+
 /* --- Menu button styles --- */
 // menuButton expands and collapse the sidebar menu upon toggled
 .menuButton {
   position: absolute;
   display: inline-block;
-  float: right;
+  top: 0;
   width: 4.6875%;
   @include aspectRatioHeightGenerator(4.6875, 1, 1);
   background: $greyscaleLevel0 url("../img/main_icons/hamburger.svg") no-repeat center;
