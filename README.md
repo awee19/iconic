@@ -1,11 +1,9 @@
-iconic foundry
+iconic foundry v1.0.3
 ======
 
 Description
 ======
-I created the iconic foundry as a website to house my various design portfolio. These design works include icon, website and other graphic designs. The design ideation and inspiration can be found in individual page. 
-
-Although the iconic foundry is a front end project currently, I plan to integrate some back end integration in the near future. This will be largely done using Node.JS. I have also plan to create two more responsive break points (tablet and phone) after I have finalised with the desktop version.
+I created the iconic foundry because I couldn't upload my stuff up onto Dribbble. Now that I have released v1.0.3, I guess I would have to brush up my backend skills and create a CMS of some sort so that I can better update the content here.
 
 Technical skills
 ======
@@ -15,6 +13,6 @@ Font end
 - CSS3
 - JS
 
-TODO: Back end
+TODO: Back end CMS
 - Node.JS
 
