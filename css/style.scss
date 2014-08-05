@@ -489,10 +489,12 @@ address{
 // workContainer to contain both the screenshot/sprite and also the title of the work
 .workContainer {
   display: inline-block;
+  vertical-align: top;
   width: (167/594) * 100%;
   margin-right: (42/594)*100%;
 
   a {
+
     &:hover {
       opacity: 1;
     }

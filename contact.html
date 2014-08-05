@@ -10,7 +10,7 @@ The Iconic Foundry is a online portfolio which showcase the various design works
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="description" content="iconic foundry">
+    <meta name="description" content="Iconic Icon Foundry">
     <meta name="keywords" content="SVG, portfolio, web design, icons">
     <meta name="author" content="Ting Yi Wei">
 
@@ -20,8 +20,9 @@ The Iconic Foundry is a online portfolio which showcase the various design works
     <link rel="stylesheet" href="css/style.css"/>
 
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+    <link rel="image_src" href="img/logo/brand.svg"/>
 
-    <title>The iconic foundry</title>
+    <title>iconic foundry</title>
 </head>
 <body>
 
@@ -31,9 +32,7 @@ The Iconic Foundry is a online portfolio which showcase the various design works
 
     <div class="sidebarMenuContainer sidebarInitial">
         <div class="menuTabContainer">
-            <a href="index.html">
-                <span id="menuTabHome" class="iconContainer"></span>
-            </a>
+            <span id="menuTabHome" class="iconContainer activeTab"></span>
         </div>
 
         <div class="menuTabContainer">
@@ -43,11 +42,7 @@ The Iconic Foundry is a online portfolio which showcase the various design works
         </div>
 
         <div class="menuTabContainer">
-            <span id="menuTabContact" class="iconContainer activeTab"></span>
-        </div>
-
-        <div class="menuTabContainer">
-            <a href="docs/Ting_Yi_Wei_Resume_2014.pdf">
+            <a href="docs/Ting_Yi_Wei_Resume_2014.pdf" target="_blank">
                 <span id="menuTabResume" class="iconContainer"></span>
             </a>
         </div>
@@ -68,16 +63,74 @@ The Iconic Foundry is a online portfolio which showcase the various design works
 <div class="contentContainer">
     <!-- content title goes here -->
     <div class="contentCopywriting">
-        <h1>Contact</h1>
-
+        <h1>Welcome to the iconic foundry</h1>
+        <p>
+            The iconic foundry, home to the design portfolio of <a href="mailto:yw.ting0880@gmail.com?subject=Hello"><strong>Ting</strong> Yi Wei</a>.
+        </p>
     </div>
 
+    <!-- start filter buttons container -->
+    <!-- Reserved! Not in used yet. -->
+
+    <!-- start of grid container -->
+    <div class="contentWrapper">
+        <!-- start of grid row -->
+        <div class="workGridRow col16 contentWrapper">
+            <div class="workContainer">
+                <a href="8packs-icon-coloured.html">
+                    <div id="sprite8packsIconColoured" class="workSpriteContainer"></div>
+                    <h4 class="workTitle">8packs icons coloured</h4>
+                </a>
+            </div>
+
+            <div class="workContainer">
+                <a href="8packs-icon-mono.html">
+                    <div id="sprite8packsIconMono" class="workSpriteContainer"></div>
+                    <h4 class="workTitle">8packs icons monochromatic</h4>
+                </a>
+            </div>
+
+            <div class="workContainer last">
+                <a href="tech-news.html">
+                    <div id="spriteTechNews" class="workSpriteContainer"></div>
+                    <h4 class="workTitle">Tech News mockup</h4>
+                </a>
+            </div>
+        </div>
+        <!-- end of grid row -->
+
+        <!-- start of grid row -->
+        <div class="workGridRow col16 contentWrapper">
+            <div class="workContainer">
+                <a href="iconic.html">
+                    <div id="spriteIconic" class="workSpriteContainer"></div>
+                    <h4 class="workTitle">The iconic foundry</h4>
+                </a>
+            </div>
+
+            <div class="workContainer">
+                <a href="calorie-calculator.html">
+                    <div id="spriteCalorieCalc" class="workSpriteContainer"></div>
+                    <h4 class="workTitle">Pixel Man's Calorie Calculator</h4>
+                </a>
+            </div>
+
+            <div class="workContainer last">
+                <a href="8packs-form.html">
+                    <div id="sprite8packs" class="workSpriteContainer"></div>
+                    <h4 class="workTitle">8packs system wireframe</h4>
+                </a>
+            </div>
+        </div>
+        <!-- end of grid row -->
+
+    </div>
+    <!-- end of grid container -->
 </div>
 
 <footer>
     <ul class="horizontalList footerSiteMap">
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="docs/Ting_Yi_Wei_Resume_2014.pdf" target="_blank">Resume</a></li>
         <li><a href="http://www.comp.nus.edu.sg/~a0087745" target="_blank">Photography</a></li>
     </ul>

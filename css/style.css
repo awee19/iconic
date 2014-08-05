@@ -433,6 +433,7 @@ address {
 
 .workContainer {
   display: inline-block;
+  vertical-align: top;
   width: 28.11448%;
   margin-right: 7.07071%; }
   .workContainer a:hover {
