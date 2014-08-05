@@ -360,57 +360,64 @@ address{
 }
 
 #menuTabHome {
-  background: transparent url("../img/main_icons/home.svg") no-repeat left;
-  @include menuContainerLabelGenerator("Home");
+  background: transparent url("../img/main_icons/home.svg") no-repeat left center;
+  // @include menuContainerLabelGenerator("Home");
 
   &.activeTab {
-    background: transparent url("../img/main_icons/home_active.svg") no-repeat left;
+    background: transparent url("../img/main_icons/home_active.svg") no-repeat left center;
   }
 }
 
 #menuTabAbout {
-  background: transparent url("../img/main_icons/question_mark.svg") no-repeat left;
-  @include menuContainerLabelGenerator("About");
+  background: transparent url("../img/main_icons/question_mark.svg") no-repeat left center;
+  // @include menuContainerLabelGenerator("About");
 
   &.activeTab {
-    background: transparent url("../img/main_icons/question_mark_active.svg") no-repeat left;
+    background: transparent url("../img/main_icons/question_mark_active.svg") no-repeat left center;
   }
 }
 
 #menuTabContact {
-  background: transparent url("../img/main_icons/mail.svg") no-repeat left;
-  @include menuContainerLabelGenerator("Contact");
+  background: transparent url("../img/main_icons/mail.svg") no-repeat left center;
+  // @include menuContainerLabelGenerator("Contact");
 
   &.activeTab {
-    background: transparent url("../img/main_icons/mail_active.svg") no-repeat left;
+    background: transparent url("../img/main_icons/mail_active.svg") no-repeat left center;
   }
 }
 
 #menuTabStyleGuide {
-  background: transparent url("../img/main_icons/book.svg") no-repeat left;
-  @include menuContainerLabelGenerator("Style Guide");
+  background: transparent url("../img/main_icons/book.svg") no-repeat left center;
+  // @include menuContainerLabelGenerator("Style Guide");
 
   &.activeTab {
-    background: transparent url("../img/main_icons/book_active.svg") no-repeat left;
+    background: transparent url("../img/main_icons/book_active.svg") no-repeat left center;
   }
 }
 
 #menuTabResume {
-  background: transparent url("../img/main_icons/folder.svg") no-repeat left;
-  @include menuContainerLabelGenerator("Resume");
+  background: transparent url("../img/main_icons/folder.svg") no-repeat left center;
+  // @include menuContainerLabelGenerator("Resume");
 
   &.activeTab {
-    background: transparent url("../img/main_icons/folder_active.svg") no-repeat left;
+    background: transparent url("../img/main_icons/folder_active.svg") no-repeat left center;
   }
 }
 
 #menuTabPhotography {
-  background: transparent url("../img/main_icons/photo.svg") no-repeat left;
-  @include menuContainerLabelGenerator("Photography");
+  background: transparent url("../img/main_icons/photo.svg") no-repeat left center;
+  // @include menuContainerLabelGenerator("Photography");
 
   &.activeTab {
-    background: transparent url("../img/main_icons/photo_active.svg") no-repeat left;
+    background: transparent url("../img/main_icons/photo_active.svg") no-repeat left center;
   }
+}
+
+.menuTabLabel {
+  vertical-align: middle;
+  @include headerFontFamily();
+  font-weight: 700;
+  font-size: $headerLevel2;
 }
 
 .menuTabHeader {
