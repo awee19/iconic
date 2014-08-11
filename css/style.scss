@@ -251,6 +251,7 @@ address{
 
 // Prevent last column from overflowing to next line
 .last {
+  display: inline-block;
   float: right;
   margin-right: 0 !important;
 }

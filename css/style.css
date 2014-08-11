@@ -221,6 +221,7 @@ address {
   width: 100%; }
 
 .last {
+  display: inline-block;
   float: right;
   margin-right: 0 !important; }
 
