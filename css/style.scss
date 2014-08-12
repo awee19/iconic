@@ -21,6 +21,9 @@ $statusSuccess: #58af5a;
 $statusWarning: #ea8236;
 $statusDanger: #e8404c;
 
+// Anchor link colour
+$linkColour: #467de1;
+
 /* --- Font size --- */
 // Header level: 0 >> smallest, 5 >> biggest
 $headerLevel0: 0.75rem;
@@ -95,8 +98,6 @@ $headerLevel5: 2rem;
 
   @for $i from 1 through $columns {
     .col#{$i} {
-      position: relative;
-      float: left;
       display: inline-block;
 
       @include columnWidthCalculator($i);
@@ -198,6 +199,7 @@ p {
   margin-bottom: 1rem;
 
   a{
+    color: $linkColour;
     font-style: italic;
   }
 }
@@ -251,9 +253,8 @@ address{
 
 // Prevent last column from overflowing to next line
 .last {
-  position: relative;
   display: inline-block;
-  right: 0;
+  float: right;
   margin-right: 0 !important;
 }
 
