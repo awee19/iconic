@@ -98,7 +98,7 @@ $headerLevel5: 2rem;
 
   @for $i from 1 through $columns {
     .col#{$i} {
-      display: inline-block;
+      display: inline;
 
       @include columnWidthCalculator($i);
 
@@ -253,8 +253,7 @@ address{
 
 // Prevent last column from overflowing to next line
 .last {
-  display: inline-block;
-  float: right;
+  float: right !important;
   margin-right: 0 !important;
 }
 
