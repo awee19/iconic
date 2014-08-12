@@ -154,9 +154,9 @@ header {
 /* --- Footer tag --- */
 footer {
   position: relative;
-  width: (684)/960 * 100%;
+  width: (668)/960 * 100%;
   margin-left: (121)/960 * 100%;
-  padding: 16/960 * 100%;
+  padding: 24/960 * 100%;
   background: $greyscaleLevel7;
   border: $greyscaleLevel7 solid 1px;
 }
@@ -251,22 +251,36 @@ address{
 
 // Prevent last column from overflowing to next line
 .last {
+  position: relative;
   display: inline-block;
-  float: right;
+  right: 0;
   margin-right: 0 !important;
 }
+
+/* --- Clear fix for floating elements --- */
+/*.clearFix {
+  display: inline-block;
+
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}*/
 
 /* --- Header content --- */
 
 /* --- Header tag --- */
-// Not in use
-.hideOverflow {
+/*.hideOverflow {
   overflow: hidden;
 }
 
 .showOverflow {
   overflow: visible;
-}
+}*/
 
 /* --- Brand container --- */
 // This container holds the brand logo.
@@ -282,8 +296,8 @@ address{
 
 /* --- Sidebar menu elements --- */
 
-.headerContent {
-}
+/*.headerContent {
+}*/
 
 /* --- Menu button styles --- */
 // menuButton expands and collapse the sidebar menu upon toggled
@@ -314,9 +328,10 @@ address{
 /* --- Sidebar menu styles --- */
 // sideBarMenuContainer contains the actual sidebar menu items
 .sidebarMenuContainer {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   width: 17.39583%;
+  top: 0;
+  right: 0;
   float: right;
   background: $greyscaleLevel0;
   color: $greyscaleLevel10;

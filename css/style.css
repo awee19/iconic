@@ -32,9 +32,9 @@ header {
 /* --- Footer tag --- */
 footer {
   position: relative;
-  width: 71.25%;
+  width: 69.58333%;
   margin-left: 12.60417%;
-  padding: 1.66667%;
+  padding: 2.5%;
   background: #b9b9b9;
   border: #b9b9b9 solid 1px; }
 
@@ -221,18 +221,33 @@ address {
   width: 100%; }
 
 .last {
+  position: relative;
   display: inline-block;
-  float: right;
+  right: 0;
   margin-right: 0 !important; }
 
+/* --- Clear fix for floating elements --- */
+/*.clearFix {
+  display: inline-block;
+
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}*/
 /* --- Header content --- */
 /* --- Header tag --- */
-.hideOverflow {
-  overflow: hidden; }
+/*.hideOverflow {
+  overflow: hidden;
+}
 
 .showOverflow {
-  overflow: visible; }
-
+  overflow: visible;
+}*/
 /* --- Brand container --- */
 .brandContainer {
   display: inline-block;
@@ -243,6 +258,8 @@ address {
   margin-left: 38.125%; }
 
 /* --- Sidebar menu elements --- */
+/*.headerContent {
+}*/
 /* --- Menu button styles --- */
 .menuButton {
   position: absolute;
@@ -271,9 +288,10 @@ address {
 
 /* --- Sidebar menu styles --- */
 .sidebarMenuContainer {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   width: 17.39583%;
+  top: 0;
+  right: 0;
   float: right;
   background: #070707;
   color: white;
